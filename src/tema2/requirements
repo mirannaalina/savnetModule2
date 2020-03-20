@@ -1,0 +1,20 @@
+Tema 2:
+
+
+1) Creati o aplicatie care modeleaza o lista de cumparaturi.
+a) Lista va contine minim 10 obiecte de tip Achizitie, care au ca atribute un pret per unitate si o cantitate, si, in plus, o metoda care calculeaza si returneaza pretul total (cantitate*pret)
+b) Obiectele Achizitie, la randul lor, pot fi de mai multe tipuri: Aliment (cu atributul dataDeExpirare - ca sa nu ne complicam, sa presupunem ca ne intereseaza doar ziua din luna curenta, deci poate fi un numar intreg de la 1 la 31) sau AparatElectrocasnic (cu atributul garantie, de tip int - ex: 2 ani)
+c) Sortati lista crescator, folosind un comparator, pe baza pretului total al obiectelor, si afisati-o.
+d) Extindeti functionalitatea comparatorului de la punctul c) astfel: daca ambele obiecte pe care le comparam sunt de tip Aliment, le vom compara pe baza dateiDeExpirare, tot crescator. Daca ambele obiecte sunt de tip AparatElectrocasnic, le vom compara crescator pe baza garantiei. Daca nu ne aflam in niciunul din cazurile prezentate la acest punct, vom compara cele 2 obiecte ca la punctul c)
+
+
+2) Creati o aplicatie care modeleaza o carte de telefon, in care utilizatorul poate gasi o persoana, pe baza numarului de telefon.
+a) O persoana este caracterizata prin CNP(String), Nume, Prenume si Localitatea de domiciliu.
+b) Folositi o structura de date potrivita pentru a stoca informatia, dintre cele studiate la curs. Adaugati minim 10 intrari in aceasta colectie.
+c) Ii vom afisa un mesaj utilizatorului, prin care il invitam sa introduca un numar de telefon, pentru a descoperi cine este posesorul. Daca utilizatorul introduce (de la tastatura) un numar care nu exista, ii vom afisa un mesaj de genul "Numarul nu exista". In caz contrar vom afisa datele persoanei asociate cu acel numar (folositi toString()). Apoi, vom afisa din nou "Introduceti un numar" si ciclul se reia. Daca utilizatorul introduce ceva ales de voi (ex: "Exit"), programul se va inchide. (indiciu: pentru a putea face aplicatia sa reia un set de instructiuni, vom avea nevoie de o bucla infinita)
+
+
+
+
+
+
