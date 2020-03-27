@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Main {
 
+
+
     public static void main(String[] args) {
 
 
@@ -22,6 +24,7 @@ public class Main {
         persoane.add(new Persoana("12352523523","Stan","Anton","Otelu-Rosu","0988008844"));
         persoane.add(new Persoana("12352523523","Vitalie","Rares","Otelu-Rosu","0987655533"));
 
+        System.out.println("Introduceti un nr: ");
 
         Scanner sc = new Scanner(System.in);
 
@@ -29,11 +32,13 @@ public class Main {
 
 
         while(true) {
-            System.out.println("Introduceti un nr: ");
-            if (numar.contains(nr.)) {
+            if (persoane.contains(numar)) {
                 System.out.println(persoane.toString());//doar persoana cu nr
+                //trebuie stocate toate nr intr-un array separat?
+
             } else {
                 System.out.println("Numarul nu exista");
+                break;
             }
         }
     }

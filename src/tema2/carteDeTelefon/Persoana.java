@@ -12,6 +12,12 @@ public class Persoana {
         this.nr = nr;
     }
 
+    public String getNr(){
+        return nr;
+    }
+
+
+
     @Override
     public String toString() {
         return "Persoana{" +

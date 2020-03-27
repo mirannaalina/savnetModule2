@@ -2,12 +2,12 @@ package tema2.listaCumparaturi;
 
 public class Achizitie implements Comparable<Achizitie>{
 
-    private int pret,cantitate;
+    private double pret,cantitate;
 
-    int totalPrice = pret * cantitate;
+    double totalPrice = pret * cantitate;
 
 
-    public Achizitie(int pret, int cantitate) {
+    public Achizitie(double pret, double cantitate) {
         this.pret = pret;
         this.cantitate = cantitate;
     }
@@ -31,6 +31,6 @@ public class Achizitie implements Comparable<Achizitie>{
 
     @Override
     public int compareTo(Achizitie o) {
-        return totalPrice.compareTo(o.totalPrice);
+        return 0;//totalPrice.compareTo(o.totalPrice);
     }
 }
