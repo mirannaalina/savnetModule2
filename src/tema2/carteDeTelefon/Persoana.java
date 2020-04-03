@@ -2,14 +2,14 @@ package tema2.carteDeTelefon;
 
 public class Persoana {
 
-    String cnp,nume,prenume,localitate,nr;
+    String cnp,nume,prenume,localitate;
 
-    public Persoana(String cnp, String nume, String prenume, String localitate,String nr) {
+    public Persoana(String cnp, String nume, String prenume, String localitate) {
         this.cnp = cnp;
         this.nume = nume;
         this.prenume = prenume;
         this.localitate = localitate;
-        this.nr = nr;
+
     }
 
     public String getCnp() {
@@ -44,13 +44,6 @@ public class Persoana {
         this.localitate = localitate;
     }
 
-    public String getNr() {
-        return nr;
-    }
-
-    public void setNr(String nr) {
-        this.nr = nr;
-    }
 
     @Override
     public String toString() {
@@ -58,8 +51,6 @@ public class Persoana {
                 "cnp='" + cnp + '\'' +
                 ", nume='" + nume + '\'' +
                 ", prenume='" + prenume + '\'' +
-                ", localitate='" + localitate + '\'' +
-                ", nr='" + nr + '\'' +
-                '}';
+                ", localitate='" + localitate + '\'';
     }
 }
