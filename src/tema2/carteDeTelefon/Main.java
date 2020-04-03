@@ -30,15 +30,9 @@ public class Main {
 
         String numar = sc.nextLine();
 
-
-        while(true) {
-            if (persoane.contains(numar)) {
-                System.out.println(persoane.toString());//doar persoana cu nr
-                //trebuie stocate toate nr intr-un array separat?
-
-            } else {
-                System.out.println("Numarul nu exista");
-                break;
+        for(Persoana p : persoane) {
+            if (numar.contains(getNr)) {
+                System.out.println(p.toString());//doar persoana cu nr
             }
         }
     }

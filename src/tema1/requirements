@@ -1,0 +1,30 @@
+Tema 1:
+Exercitiul 1)
+
+a) implementati ierarhia de clase din imaginea atasata. Nu am mai pus la metode constructorii, getterii, setterii si toString. Voi decideti unde e cazul.
+b) creati in metoda main o cafea care contine 1 unitate zahar alb, 2 unitati zahar brun si 3 unitati de lapte, cu procentaj de grasime 1.5%. Afisati-o.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercitiul 2)
+
+a) Creati o clasa numita Carte, cu urmatoarele atribute: nume, autor, pret. Alegeti cel mai potrivit tip de date pentru toate aceste campuri. Mai adaugati si campul gen, care va fi de tipul Enum (ati facut la modulul 1, si gasiti si pe net cum se foloseste). In acest enum vom pune categoriile LITERATURA_CLASICA, THRILLER, PSIHOLOGIE, MANUAL, DEZVOLTARE_PERSONALA. Nu uitati sa suprascrieti metoda toString, pentru clasa Carte.
+
+b) Creati un Set de carti. Ca implementare, folositi HashSet
+
+c) Adaugati minim 10 carti in acest Set
+
+d) Afisati toate cartile din categoria LITERATURA_CLASICA
+
+e) Stergeti toate cartile din categoria THRILLER (nu le vom sterge pur si simplu, ci vom verifica pentru fiecare carte din colectie daca este sau nu de tip Thriller, iar daca da, o stergem)
+
+f) Pentru toate cartile din categoria MANUAL, aplicati o reducere de 10% (la fel ca la punctul 5, doar ca de data asta o sa le schimbam pretul, in loc sa le stergem)
+
+g) Suprascrieti in clasa Carte metoda equals(), astfel incat daca doua carti au acelasi nume si acelasi autor, va returna true (adica sunt una si aceeasi carte)
+
+*Tip: dupa fiecare modificare, afisati din nou Setul, ca sa vedeti cum arata
+
+
+
+
