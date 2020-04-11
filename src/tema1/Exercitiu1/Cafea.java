@@ -9,6 +9,9 @@ public class Cafea {
 
 
     public Cafea(Ingredient... ingrediente ) {
+        //ce parere ai de asta?
+        this.ingrediente= Arrays.stream(ingrediente).collect(Collectors.toSet());
+        
         this.ingrediente= new HashSet<Ingredient>(ingrediente.length);
 
         if(ingrediente!= null){
