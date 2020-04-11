@@ -22,27 +22,20 @@ public class Main {
         persoane.put(new Persoana("12352523523", "Stan", "Anton", "Otelu-Rosu"), "0880020324");
         persoane.put(new Persoana("12352523523", "Vitalie", "Rares", "Otelu-Rosu"), "088208770324");
 
-        System.out.println("Introduceti un nr: ");
-
-        Scanner sc = new Scanner(System.in);
-
-        String numar = sc.nextLine();
-
-        if(persoane.get(numar)==null){
-            System.out.println("persoana nu exista");
-        }
-
-  //      persoane.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
-
-  //      if(persoane.containsValue(numar)){
-  //          System.out.println(persoane);
-  //      }
-
-        Optional<String> val = persoane.entrySet().stream().map(Map.Entry::getValue).filter(v->v!=null).findFirst();
-
-        if(val.isPresent()){
-            System.out.println(val);
-        }
+        Scanner scan = new Scanner(System.in);
+		while(true){
+			System.out.println("Pentru a inchide, stasteaza '0' ");
+			System.out.println("Introduceti un numar de telefon: ");
+			long numar = scan.nextLong();
+			if (numar == 0) {
+				System.out.println("Programul s-a inchis");
+				break;
+			}
+			boolean found = persoane.keySet().stream().filter(p -> persoane.get(p).equals(numar)).peek(System.out::println).findAny().isPresent();
+			if(!found){
+				System.out.println("Numarul nu exista");
+			}
+		}
 
     }
 }
