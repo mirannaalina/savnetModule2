@@ -33,6 +33,7 @@ public class Main {
     }
     private static void bookThriller(final Set<Carte> setC){
         System.out.println("Carti fara Thriller");
+        setC.stream().filter(c.getGen()==Gen.THRILLER).forEach(System.out::println);
         //setC.stream().filter(Gen.THRILLER)
     }
 
