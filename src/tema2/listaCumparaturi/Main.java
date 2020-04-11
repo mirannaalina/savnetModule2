@@ -43,7 +43,35 @@ public class Main {
         for(Achizitie list : lista) {
             System.out.println(list);
         }
+        
+        Comparator<Achizitie> byPret = new Comparator<Achizitie>() {
 
+			public int compare(Achizitie a, Achizitie b) {
+				return (int)(a.getPret() - b.getPret());
+			}
+		};
+        
+		Collections.sort(lista, byPret);
+
+		for(Achizitie achizitie : lista) {
+			System.out.println(achizitie.toString() + "\n");
+		}
+
+		Comparator byDataGarantiePret = new Comparator() {
+
+			public int compare(Object a, Object b) {
+				if (a instanceof Aliment && b instanceof Aliment)
+					return ((Aliment)a).dataDeExpirare - ((Aliment)b).dataDeExpirare;
+				if (a instanceof AparatElectrocasnic && b instanceof AparatElectrocasnic)
+					return ((AparatElectrocasnic)a).garantie - ((AparatElectrocasnic)b).garantie;
+				return (int)(((Achizitie)a).getPret() - ((Achizitie)b).getPret());
+			}
+		};
+        
+		Collections.sort(lista, byDataGarantiePret);
+		for (Achizitie achizitie : lista) {
+			System.out.println(achizitie.toString() + "\n");
+		}
 
     }
 }
